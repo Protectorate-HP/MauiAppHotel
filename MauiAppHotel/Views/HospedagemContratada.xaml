@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Teal">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Suíte Super Luxo"
+               TextColor="Black"
+               FontFamily="times new roman"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource OffBlack}">
+            <StackLayout  Orientation="Horizontal" >
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Adultos: " />
+                    <Label Text=" 2" 
+                           TextColor="Teal" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Crianças: " />
+                    <Label Text=" 1" 
+                           TextColor="Teal" />
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource OffBlack}">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"
+                       TextColor="Teal"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"
+                       TextColor="Teal"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="3"
+                       TextColor="Teal"/>
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource OffBlack}">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="Valor Total: " />
+                <Label Text=" R$ 750,00" 
+                       TextColor="Teal"/>
+            </HorizontalStackLayout>
+        </Frame>
+        <Button Text="Voltar"  BackgroundColor="{StaticResource OffBlack}"
+        TextColor="White"
+                HorizontalOptions="Center"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
