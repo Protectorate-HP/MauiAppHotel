@@ -1,2 +1,3 @@
-i tried to update but git hub and visual studio wont let me do it
-i wont update this shit
+<h1> Simple code for C# </h1>
+
+Nothing much only for test
